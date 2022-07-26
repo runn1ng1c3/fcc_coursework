@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <title>Python Note</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>
+        <a class="header-link" href="#Introduction">Python Note</a>
+      </header>
+      <ul>
+        <a class="nav-link" href="#Introduction"><li>Introduction</li></a>
+        <a class="nav-link" href="#Python_vs_Other_Programming_Languages"
+          ><li>Python vs Other Programming Languages</li></a
+        >
+        <a class="nav-link" href="#Python_Syntax"><li>Python Syntax</li></a>
+        <a class="nav-link" href="#Variables"><li>Variables</li></a>
+        <a class="nav-link" href="#Function_Declaration"
+          ><li>Function Declaration</li></a
+        >
+        <a class="nav-link" href="#Reference"><li>Reference</li></a>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          Python is a popular programming language. It was created by Guido van
+          Rossum, and released in 1991.
+        </p>
+      </section>
+      <section class="main-section" id="Python_vs_Other_Programming_Languages">
+        <header>Python vs Other Programming Languages</header>
+        <ul>
+          <li>
+            Python was designed for readability, and has some similarities to
+            the English language with influence from mathematics.
+          </li>
+          <li>
+            Python uses new lines to complete a command, as opposed to other
+            programming languages which often use semicolons or parentheses.
+          </li>
+          <li>
+            Python relies on indentation, using whitespace, to define scope;
+            such as the scope of loops, functions and classes. Other programming
+            languages often use curly-brackets for this purpose.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Python_Syntax">
+        <header>Python Syntax</header>
+
+        <p>We start off by studying the syntax of Python.</p>
+        <p>
+          As explained in previous section, in the code below, we can see that
+          to define the scope of the <code>if</code> statement, the
+          <code>print</code> statement is indented once to the right. Lastly, we
+          can see that Python syntax is very close to English sentences.
+        </p>
+        <pre><code>
+        if 10 > 2 and 5 < 15:
+          print("Hello World")
+        </code></pre>
+
+        <p>
+          From the code above, we can see that to print value in the console:
+        </p>
+        <pre><code>
+        print("Hello world")
+        </code></pre>
+
+        <p>To insert comments in Python:</p>
+        <pre><code>
+        # This is a comment
+        # in Python
+        x = 10 # x is of int type
+
+        '''
+        This is how you can also put
+        multiline comment in Python
+        '''
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+
+        <p>
+          A variable can have a short name (like x and y) or a more descriptive
+          name (age, carname, total_volume). Rules for Python variables:
+        </p>
+        <ul>
+          <li>
+            A variable name must start with a letter or the underscore character
+          </li>
+          <li>A variable name cannot start with a number</li>
+          <li>
+            A variable name can only contain alpha-numeric characters and
+            underscores (A-z, 0-9, and _ )
+          </li>
+          <li>
+            Variable names are case-sensitive (age, Age and AGE are three
+            different variables)
+          </li>
+        </ul>
+        <h3>Creating variables</h3>
+        <p>
+          Python has no command for declaring a variable. A variable is created
+          the moment you first assign a value to it.
+        </p>
+        <p>
+          Variables do not need to be declared with any particular <i>type</i>,
+          and can even change type after they have been set.
+        </p>
+        <p>For example:</p>
+        <pre><code>
+        x = 4       # x is of type int
+        x = "Sally" # x is now of type str
+
+        # All legal variables name in Python
+        myvar = "John"
+        my_var = "John"
+        _my_var = "John"
+        myVar = "John"
+        MYVAR = "John"
+        myvar2 = "John"
+    </code></pre>
+      </section>
+
+      <section class="main-section" id="Function_Declaration">
+        <header>Function Declaration</header>
+        <p>
+          A function is a block of code which only runs when it is called. You
+          can pass data, known as parameters, into a function. A function can
+          return data as a result.
+        </p>
+        <h3>Creating a function</h3>
+        <p>
+          In Python a function is defined using the <code>def</code> keyword:
+        </p>
+        <pre><code>
+        def my_function():
+          print("this is a function")
+        </code></pre>
+        <h3>
+          Calling a function by passing arguments and getting the return value
+          of the function
+        </h3>
+        <p>
+          To call a function, we just need to pass values to the arguments of
+          the function that we defined earlier. Then, by using the
+          <code>return</code> keyword, we get the return value of the function.
+          For example:
+        </p>
+        <pre><code>
+        def sum_of_three_numbers(a, b, c):
+          return a + b + c
+        
+        my_function(1, 2, 3) # return value of 6
+        </code></pre>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>
+          All of the contents in this page are referenced from
+          <a href="https://www.w3schools.com/python/">W3Schools.com</a>.
+        </p>
+      </section>
+    </main>
+  </body>
+  <footer>Made by wyra_hero 2022</footer>
+</html>

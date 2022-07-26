@@ -1,0 +1,94 @@
+:root {
+  --bcolor1: #023047;
+  --bcolor2: #219ebc;
+  --ycolor1: #ffb703;
+  --bg-color: #8ecae6;
+}
+
+html {
+  background-color: var(--bg-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(--ycolor1);
+  text-shadow: 1px 1px gray;
+  font-family: arial;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  width: 100%;
+}
+
+img {
+  width: 50px;
+  background-color: white;
+  align-items: center;
+}
+#nav-bar {
+  width: 100%;
+  background-color: var(--bcolor1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffe9f3;
+  text-decoration: none;
+}
+
+.product-info {
+  margin-top: 100px;
+}
+
+#video {
+  display: block;
+  width: 480px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: var(--bcolor2);
+  margin-top: 10px;
+  padding: 12px;
+}
+
+#nav-bar .nav-link:hover {
+  background-color: var(--bcolor2);
+  color: var(--ycolor1);
+  cursor: pointer;
+}
+
+.nav-link {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #d9d9d9;
+}
+
+@media (max-width: 500px) {
+  #video {
+    width: 360px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 800px) {
+  #video {
+    width: 600px;
+    height: 360px;
+  }
+}

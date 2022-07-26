@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Mirai Anime Club Registration Form</h1>
+    <p id="description"><b>Please fill in the form below.</b></p>
+
+    <form id="survey-form">
+      <label id="name-label"
+        >Name: <input id="name" type="text" required placeholder="Your name"
+      /></label>
+      <label id="email-label"
+        >Email:
+        <input id="email" type="email" required placeholder="Your email"
+      /></label>
+      <label id="number-label"
+        >Age:
+        <input
+          id="number"
+          type="number"
+          min="13"
+          max="40"
+          required
+          placeholder="age"
+      /></label>
+
+      <label>
+        Gender:
+        <select id="dropdown">
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+      </label>
+      <p class="period">Which membership period will you register?</p>
+      <label
+        ><input type="radio" name="period" checked value="1" />Monthly</label
+      >
+      <label><input type="radio" name="period" value="2" />Yearly</label>
+
+      <p class="media">What media do you consume?</p>
+      <label><input type="checkbox" value="1" /> Manga</label>
+      <label><input type="checkbox" value="2" /> Anime</label>
+      <label><input type="checkbox" value="3" /> Live action</label>
+
+      <label
+        >Tell us more about yourself:<textarea rows="4" cols="34"></textarea>
+      </label>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>

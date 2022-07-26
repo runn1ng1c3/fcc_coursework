@@ -1,0 +1,39 @@
+body {
+  margin: auto;
+  width: 80%;
+  min-width: 300px;
+  background-color: #a3d4e1;
+}
+
+label,
+textarea {
+  display: block;
+  padding: 0.4em;
+}
+
+form {
+  padding: 10px 10px;
+  background-color: azure;
+}
+
+h1 {
+  text-align: center;
+  font-family: tahoma;
+}
+
+p[id="description"] {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.media,
+.period {
+  margin: 10px 10px 3px;
+}
+
+input[type="submit"] {
+  display: block;
+  font-size: 14px;
+  width: 50%;
+  margin: 0 auto;
+}

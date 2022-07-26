@@ -1,0 +1,151 @@
+:root {
+  --text-color1: #3c6e71;
+  --menu-color: #284b63;
+}
+
+html {
+  background: linear-gradient(#d9d9d9, #ffffff 20%, #ffffff 70%, #d9d9d9);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: var(--menu-color);
+  font-family: "Kdam Thmor Pro", sans-serif;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  height: 3rem;
+  box-shadow: 0px 2px 0.3em gray;
+}
+
+.nav-link {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 2px solid;
+  color: #d9d9d9;
+}
+
+.header {
+  width: 50%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 24px;
+  color: #d9d9d9;
+  margin: auto 0;
+}
+
+#welcome-section {
+  display: block;
+  padding-top: 25px;
+}
+
+.profile-picture {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.about-me,
+h3,
+h1 {
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: var(--text-color1);
+}
+
+.name {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px var(--text-color1);
+}
+
+.social-icons {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-size: 3em;
+  justify-content: space-evenly;
+}
+
+.checker {
+  width: 100%;
+}
+
+.project-tile {
+  width: 300px;
+  margin-bottom: 5px;
+  border-radius: 15%;
+  overflow: clip;
+}
+
+.caption {
+  background-color: #222;
+  color: #fff;
+  font: sans-serif;
+  padding: 3px;
+  text-align: center;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:click {
+  text-decoration: none;
+}
+
+.project-caption {
+  margin-bottom: -10px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4px auto;
+}
+
+.social-icons a {
+  color: var(--menu-color);
+}
+
+footer {
+  background-color: #353535;
+  height: 8%;
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+#navbar .nav-link:hover {
+  background-color: #bbb;
+  color: var(--menu-color);
+}
+
+@media (max-width: 400px) {
+  .about-me {
+    font-size: 12px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  #navbar .header {
+    font-size: 16px;
+  }
+}
